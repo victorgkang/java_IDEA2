@@ -8,13 +8,13 @@ package com.hangzhou.victor;
 public class TestExtendsStaticMethod {
     public static void main(String[] args) {
         Super.method1();
-        Sub.method1();  //子类可以继承父类的静态方法，但是不能覆盖，形成多态
+        Sub.method1();         //子类可以继承父类的静态方法，但是不能覆盖，形成多态
         Sub.method2();
 
         System.out.println("===================");
 
         Super sub = new Sub();
-        sub.method1();    //静态方法不能覆盖，形成多态
+        sub.method1();        //静态方法不能覆盖，形成多态
 
 //        sub.method2();
     }
