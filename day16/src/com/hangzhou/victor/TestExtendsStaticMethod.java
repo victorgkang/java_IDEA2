@@ -11,6 +11,8 @@ public class TestExtendsStaticMethod {
         Sub.method1();         //子类可以继承父类的静态方法，但是不能覆盖，形成多态
         Sub.method2();
 
+
+
         System.out.println("===================");
 
         Super sub = new Sub();
