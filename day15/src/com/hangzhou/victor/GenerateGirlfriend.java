@@ -140,7 +140,7 @@ class Girlfriend {
 
 }
 
-class Child {
+abstract class Child {
     private String name;
 
     /**
@@ -168,9 +168,7 @@ class Child {
     /**
      * 玩耍的方法，以便于子类进行覆盖。
      */
-    public  void playFun(){
-
-    }
+   abstract public  void playFun();
 
 }
 
