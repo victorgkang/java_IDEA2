@@ -24,5 +24,7 @@ public class Test {
         Long l4 = 127L;
         System.out.println(l3 == l4);    //true
         System.out.println(l3 == 127L);  //true
+
+
     }
 }
