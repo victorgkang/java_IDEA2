@@ -17,6 +17,7 @@ public class TestBasicSuperKeyWord {
 
 class Father{
     int field=10;
+    private int number=10;
 
     public void method(){
         System.out.println("这是father类：");
@@ -29,6 +30,7 @@ class Son extends Father{
     int field=20;
 
     public void method1(){
+//        System.out.println(super.number);     private修饰的属性，在子类中无法访问，用super.的形式也无法调用
         System.out.println("这是son类：");
         System.out.println(super.field);
         System.out.println(this.field);
