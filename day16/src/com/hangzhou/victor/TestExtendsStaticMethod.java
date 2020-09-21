@@ -19,6 +19,8 @@ public class TestExtendsStaticMethod {
         sub.method1();        //静态方法不能覆盖，形成多态
 
 //        sub.method2();
+
+
     }
 }
 
