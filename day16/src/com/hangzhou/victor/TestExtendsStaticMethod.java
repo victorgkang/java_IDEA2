@@ -16,24 +16,25 @@ public class TestExtendsStaticMethod {
         Super sub = new Sub();
         sub.method1();        //静态方法不能覆盖，形成多态
 
-//        sub.method2();
+        sub.method2();
     }
 }
 
 
 class Super{
     public static void method1(){
-        System.out.println("这是super父类静态方法");
+        System.out.println("这是super父类静态方法method1");
+    }
+    public static void method2(){
+        System.out.println("这是super父类静态方法method2");
     }
 
 }
 
 class Sub extends Super{
-
     public static void method1(){
         System.out.println("这是子类的method1");
     }
-    public static void method2(){
-        System.out.println("这是sub子类静态方法");
-    }
+
+
 }
