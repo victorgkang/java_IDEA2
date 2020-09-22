@@ -1,7 +1,7 @@
 package com.hangzhou.victor.test;
 
 /**
- * @Description:
+ * @Description: 当调用类中的方法，或创建一个对象的时候，此时类开始加载，从头向下加载静态属性
  * @Author: victor
  * @Date: 2020/9/21  20:23
  */

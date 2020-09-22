@@ -16,11 +16,21 @@ public class Test {
 
         System.out.println("=======================================");
         MyClass myClass1 = new MyClass();
+        System.out.println(myClass1.j);
         MyClass myClass2 = new MyClass();
         System.out.println(myClass1.i);
         System.out.println(myClass1.j);
         System.out.println(myClass2.i);
         System.out.println(myClass2.j);
+
+        System.out.println("=======================================");
+        String a = "hello2";
+        final String b = "hello";
+        String d = "hello";
+        String c = b + 2;
+        String e = d + 2;
+        System.out.println((a == c));//输出true
+        System.out.println((a == e));//输出false
 
 
     }
