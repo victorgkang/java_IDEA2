@@ -13,6 +13,11 @@ public class TestInterface {
         cat.climb();
         Fish fish = new Fish();
         fish.swim();
+
+        System.out.println("=====================");
+
+        Runnable r = new Bus();   //接口引用实现类对象，仅可调用接口中所声明的方法
+        r.run();
     }
 }
 
@@ -51,5 +56,22 @@ class Fish extends Animal implements Swimmable {
     @Override
     public void swim() {
         System.out.println("鱼会游...");
+    }
+}
+
+class Bus implements Runnable {
+
+    @Override
+    public void run() {
+        System.out.println("公交车在跑...");
+    }
+}
+
+class Car implements Runnable {
+
+
+    @Override
+    public void run() {
+
     }
 }
